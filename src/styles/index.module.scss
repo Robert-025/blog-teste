@@ -1,0 +1,544 @@
+.containerFirstSection {
+  width: 100%;
+  height: 85vh;
+  margin-top: 4.9rem;
+
+  background-image: url("/images/Banner_Web.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  color: var(--white);
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  :first-child {
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+
+  span {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+  }
+
+  svg {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+}
+
+.containerAddress {
+  height: 8.5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+
+  span {
+    font-size: 1.1rem;
+    margin: 0 20px;
+  }
+
+  .containerSocialMedia {
+    display: flex;
+    a {
+      width: 30px;
+      height: 30px;
+
+      background-color: var(--caramel-100);
+      margin: 0 5px;
+      padding: 5px;
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(80%);
+      }
+    }
+  }
+}
+
+.containerDeskSection {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  img {
+    height: 100vh;
+    width: 55%;
+  }
+
+  h1 {
+    width: 12rem;
+    margin-bottom: 30px;
+    font: 400 2rem Cinzel, sans-serif;
+    color: var(--blue-900);
+    border-bottom: 3px solid var(--blue-900);
+  }
+
+  p {
+    font: 300 1rem Aeonik, sans-serif;
+    width: 90%;
+    line-height: 1.4rem;
+    margin: 20px 0;
+
+    span {
+      font-weight: 500;
+    }
+  }
+}
+
+.containerOccupationAreaSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.containerContactSection {
+  height: 100%;
+  border-bottom: 0.5rem solid var(--blue-900);
+  padding-bottom: 3rem;
+
+  img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .containerContactAddress {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1200px;
+    width: 90%;
+
+    .containerContact {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      background-color: var(--caramel-100);
+      border-radius: 10px;
+      justify-content: center;
+      padding: 40px 30px;
+      background-image: url("/images/Formulario.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      -webkit-box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.45);
+      box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.45);
+
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .titleForm {
+          display: flex;
+          flex: 1;
+          align-items: center;
+
+          h1 {
+            font: 400 2rem Cinzel, sans-serif;
+          }
+
+          svg {
+            font-size: 1.4rem;
+            margin-right: 10px;
+          }
+        }
+        span {
+          margin: 30px 0;
+          font-weight: 300;
+        }
+
+        input,
+        textarea {
+          background-color: transparent;
+          margin: 10px 0;
+          border: 2px solid black;
+          padding: 10px;
+          border-radius: 10px;
+          resize: none;
+          font-weight: 300;
+        }
+
+        button {
+          font: 400 1.4rem Cinzel, sans-serif;
+          padding: 0.3rem;
+          border: none;
+          color: var(--white);
+          background-color: var(--blue-900);
+          width: 30%;
+          border-radius: 5px;
+          margin-top: 10px;
+
+          svg {
+            height: 90%;
+            width: 10%;
+          }
+
+          transition: filter 0.2s;
+          &:hover {
+            filter: brightness(80%);
+          }
+        }
+      }
+    }
+
+    .containerInformations {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      div {
+        width: 90%;
+        max-width: 300px;
+        .titleContact {
+          display: flex;
+          align-items: center;
+
+          svg {
+            font-size: 1.3rem;
+            margin-right: 10px;
+          }
+        }
+        p {
+          margin: 10px 0;
+          font-weight: 300;
+
+          a {
+            font-weight: 700;
+
+            transition: filter 0.2s;
+            &:hover {
+              filter: opacity(0.8);
+            }
+          }
+
+          svg {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.containerFooter {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("/images/Banner_Rodapé.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+
+  width: 100%;
+  height: 50vh;
+
+  .containerInformationsFooter {
+    display: flex;
+    width: 65%;
+    padding: 0 1.5%;
+
+    .containerLogoFooter {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 80%;
+      }
+    }
+
+    .containerMenuFooter {
+      width: 50%;
+      color: var(--white);
+      font-size: 0.8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      padding-right: 40px;
+
+      .containerMenu {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        border-bottom: 2px solid var(--white);
+
+        a {
+          font-weight: 300;
+          margin: 7px 0;
+          border-bottom: 2px solid transparent;
+          cursor: pointer;
+
+          transition: all 0.2s all;
+        }
+
+        a:hover {
+          font-weight: 400;
+          border-bottom: 2px solid var(--white);
+        }
+      }
+      .containerTextFooter {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0;
+
+        align-items: flex-end;
+
+        :last-child {
+          margin: 15px 0;
+          text-align: right;
+        }
+      }
+      .containerSocialMedia {
+        display: flex;
+        color: var(--blue-900);
+        a {
+          width: 25px;
+          height: 25px;
+
+          background-color: var(--caramel-100);
+          margin: 0 10px;
+          padding: 5px;
+          border-radius: 50%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          transition: filter 0.2s;
+
+          &:hover {
+            filter: brightness(80%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.containerCopyRigth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--caramel-100);
+  display: flex;
+  font-weight: 300;
+
+  p {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .containerTextCopy {
+    font-weight: 400;
+    p {
+      svg {
+        margin-right: 3px;
+      }
+    }
+  }
+
+  img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .containerAddress {
+    text-align: center;
+  }
+
+  .containerDeskSection {
+    width: 85%;
+    margin: 0 auto;
+    text-align: justify;
+
+    img {
+      display: none;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .containerDeskSection {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .containerAddress {
+    width: 95%;
+    margin: 0 auto;
+
+    span {
+      font-size: 0.9rem;
+    }
+
+    .containerSocialMedia {
+      a {
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .containerFirstSection {
+    background-position-x: 50%;
+  }
+
+  .containerAddress {
+    height: none;
+    margin: 30px 0;
+    flex-direction: column;
+
+    text-align: center;
+    .containerSocialMedia {
+      margin-top: 15px;
+      flex-direction: row;
+    }
+  }
+
+  .containerFooter {
+    background-position: right;
+    height: 60vh;
+    .containerInformationsFooter {
+      width: 100%;
+    }
+  }
+
+  .containerCopyRigth {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .containerFirstSection {
+    background-image: url("/images/Banner_Mobile.webp");
+    background-position: left;
+    background-position-x: 40%;
+    height: 75vh;
+  }
+
+  .containerOccupationAreaSection {
+    margin-bottom: 0;
+
+    div {
+      margin-bottom: 0;
+    }
+  }
+
+  .containerDeskSection {
+    p {
+      font: 300 1.3rem Aeonik, sans-serif;
+    }
+  }
+
+  .containerContactSection {
+    .containerContactAddress {
+      flex-direction: column;
+
+      .containerContact {
+        width: 100%;
+
+        form {
+          .titleForm {
+            h1 {
+              font-size: 2rem;
+            }
+          }
+          span {
+            font-size: 1.3rem;
+          }
+
+          textarea,
+          input {
+            font-size: 1.3rem;
+          }
+
+          button {
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      .containerInformations {
+        width: 100%;
+        margin-top: 3rem;
+
+        div {
+          svg {
+            margin-right: 0;
+          }
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .containerFooter {
+    background-position: right;
+    height: 50vh;
+    .containerInformationsFooter {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      .containerLogoFooter {
+      }
+      .containerMenuFooter {
+        width: 100%;
+        padding-right: 0;
+        align-items: center;
+
+        .containerMenu {
+          align-items: center;
+        }
+
+        .containerTextFooter {
+          align-items: center;
+
+          :last-child {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .containerCopyRigth {
+    img {
+      width: 30px;
+    }
+  }
+}

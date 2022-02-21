@@ -1,0 +1,143 @@
+.tabs {
+  width: 95%;
+  margin: 2rem 0;
+
+  .containerPanel {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
+
+    div {
+      width: 100%;
+    }
+
+    .title {
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      svg {
+        font-size: 1.7rem;
+        margin: 0 10px 2rem 0;
+      }
+
+      h1 {
+        font: 400 2rem Cinzel, sans-serif;
+        color: var(--blue-900);
+        border-bottom: 3px solid var(--blue-900);
+        margin-bottom: 2rem;
+      }
+    }
+
+    .linha {
+      height: 50vh;
+      border-right: 3px solid var(--blue-900);
+      margin: 0 10%;
+      max-height: 80%;
+    }
+
+    p {
+      font: 300 1rem Aeonik, sans-serif;
+      line-height: 1.4rem;
+      margin: 20px 0;
+      text-align: justify;
+
+      span {
+        font-weight: 500;
+      }
+    }
+
+    .itensList {
+      font: 300 1rem Aeonik, sans-serif;
+      line-height: 1.4rem;
+
+      svg {
+        font-size: 0.5rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.tabButtons {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid var(--blue-900);
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+
+  button {
+    background-color: transparent;
+    color: var(--blue-600);
+    border: none;
+    font-size: 1em;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+    transition: all 0.2s;
+
+    &:hover {
+      color: var(--blue-900);
+    }
+  }
+  .active {
+    border-bottom: 3px solid var(--blue-900);
+    color: var(--blue-900);
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    margin-bottom: 0;
+    .containerPanel {
+      flex-direction: column;
+      width: 90%;
+
+      div {
+        width: 100%;
+      }
+
+      span {
+        display: none;
+      }
+
+      .itensList {
+        p {
+          margin: 10px 0;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .tabs {
+    .containerPanel {
+      p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+      }
+    }
+  }
+  .tabButtons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      width: 40%;
+      margin: 0.7rem 0;
+      font-size: 1.2rem;
+    }
+
+    span {
+      display: none;
+    }
+  }
+}
