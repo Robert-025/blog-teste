@@ -84,7 +84,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <section className={styles.containerFirstSection} id="section1">
+      <section className={styles.containerFirstSection} id="section1">  
         <span>Especialista no Direito Imobiliário</span>
         <span>
           Somos totalmente focados no universo jurídico imobiliário, com

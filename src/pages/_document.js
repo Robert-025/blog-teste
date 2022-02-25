@@ -98,6 +98,7 @@ export default class MyDocument extends Document {
           `,
             }}
           />
+          <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=blog-thpadv"></script>
         </Head>
         <body>
           <Main />
